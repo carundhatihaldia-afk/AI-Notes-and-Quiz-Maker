@@ -1,6 +1,6 @@
 ﻿body {
     font-family: Arial, sans-serif;
-    background: #f4f6f8;
+    background: linear-gradient(135deg, #e8f0ff, #f7eaff);
     margin: 0;
     padding: 0;
 }
@@ -12,12 +12,14 @@
     background: white;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
 }
 
 h1 {
     text-align: center;
     margin-bottom: 10px;
+    color: #4b3cc4;
+    font-size: 34px;
 }
 
 .subtitle {
@@ -26,14 +28,24 @@ h1 {
     margin-bottom: 30px;
 }
 
+h2 {
+    color: #4b3cc4;
+}
+
 textarea {
     width: 100%;
     box-sizing: border-box;
     padding: 15px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 2px solid #d6d0ff;
     border-radius: 8px;
     resize: vertical;
+    background-color: #faf9ff;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #6c5ce7;
 }
 
 .options {
@@ -50,9 +62,15 @@ select {
     width: 100%;
     padding: 10px;
     margin-top: 8px;
-    border: 1px solid #ccc;
+    border: 2px solid #d6d0ff;
     border-radius: 6px;
     font-size: 15px;
+    background-color: #faf9ff;
+}
+
+select:focus {
+    outline: none;
+    border-color: #6c5ce7;
 }
 
 button {
@@ -64,12 +82,12 @@ button {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    background: #333;
+    background: linear-gradient(90deg, #5b4bdb, #8e5de7);
     color: white;
 }
 
 button:hover {
-    opacity: 0.85;
+    opacity: 0.9;
 }
 
 #quiz {
@@ -77,10 +95,19 @@ button:hover {
 }
 
 .question {
-    background: #f8f9fa;
+    background: #f5f3ff;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
+    border: 1px solid #ddd7ff;
+}
+
+.question h3 {
+    color: #4b3cc4;
+}
+
+.question label {
+    color: #333;
 }
 
 @media (max-width: 700px) {
