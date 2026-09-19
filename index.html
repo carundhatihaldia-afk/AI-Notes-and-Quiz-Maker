@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Notes-to-Quiz Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>AI Notes-to-Quiz Generator</h1>
+
+        <p class="subtitle">
+            Turn your study notes into an interactive AI-powered quiz.
+        </p>
+
+        <h2>Enter Your Notes</h2>
+
+        <textarea id="notes" rows="15"
+            placeholder="Paste your study notes here..."></textarea>
+
+        <div class="options">
+
+            <div class="option-box">
+                <label>Number of Questions:</label>
+
+                <select id="questionCount">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                </select>
+            </div>
+
+            <div class="option-box">
+                <label>Difficulty:</label>
+
+                <select id="difficulty">
+                    <option value="Easy">Easy</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Hard">Hard</option>
+                </select>
+            </div>
+
+        </div>
+
+        <button onclick="generateQuiz()">Generate Quiz</button>
+
+        <div id="quiz"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
